@@ -2,7 +2,7 @@
 
 Example of Quicksort written in PHP.
 
-Quick sort uses divide and conquer in order to sort a list in .
+Quick sort uses divide and conquer in order to sort a list in O(nlogn) time in the best case and O(n<sup>2</sup>). The time complexity depends on the pivot that's chosen.
 
 The premise is as follows:
 
