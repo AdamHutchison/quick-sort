@@ -11,13 +11,8 @@ class QuickSort
         // BASE CASE
 
         // Check if the array needs sorting
-        if ($count <= 1) {
+        if ($count < 2) {
             return $list;
-        }
-
-        // check if weve hit the base case
-        if ($count == 2) {
-            return $this->swapItems($list);
         }
 
         // RECURSIVE CASE
@@ -47,18 +42,5 @@ class QuickSort
         }
 
         return [$low, $high];
-    }
-
-    private function swapItems(array $items): array
-    {
-        if (count($items) != 2) {
-            throw new \Exception("Item count needs to be 2 in order to use the swapItems method");
-        }
-
-        if ($items[1] < $items[0]) {
-            return [$items[1], $items[0]];
-        }
-
-        return $items;
     }
 }
