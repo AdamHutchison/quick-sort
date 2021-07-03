@@ -1,0 +1,15 @@
+{
+    "name": "adam/quick-sort",
+    "autoload": {
+        "psr-4": {
+            "QuickSort\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Adam Hutchison",
+            "email": "adam.hutchison@netsells.co.uk"
+        }
+    ],
+    "require": {}
+}
